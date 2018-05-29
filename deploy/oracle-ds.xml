@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datasources>
+
+<local-tx-datasource>
+
+    <jndi-name>sigeaudit</jndi-name>
+    <connection-url>jdbc:oracle:thin:@${DB_HOST}:1521:${DB_NAME}</connection-url>
+    <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+    <user-name>sievault</user-name>
+    <password>RUSS0</password>
+    <min-pool-size>0</min-pool-size>
+    <max-pool-size>200</max-pool-size>
+    <blocking-timeout-millis>30000</blocking-timeout-millis>
+    <exception-sorter-class-name>org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter</exception-sorter-class-name>
+			<query-timeout></query-timeout>
+      <metadata>
+         <type-mapping>Oracle9i</type-mapping>
+      </metadata>
+  </local-tx-datasource>
+
+</datasources>
